@@ -1,0 +1,33 @@
+<header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="{{ '/' | relative_url }}">
+        <div class="header__logo--container">
+          {% include logo.svg %}
+        </div>
+      </a>
+      <nav class="header__links">
+        <div class="container header__links-wrapper">
+          <a class="header__link" href="{{ '/' | relative_url }}" itemprop="url"><span itemprop="name">首页</span></a>
+          <a class="header__link" href="{{ '/case' | relative_url }}" itemprop="url">
+            <span itemprop="name">成功案例</span>
+          </a>
+          <a class="header__link" href="{{ '/unlock' | relative_url }}" itemprop="url">
+            <span itemprop="name">解决方案</span>
+          </a>
+          <a class="header__link" href="{{ '/contact' | relative_url }}" itemprop="url">
+            <span itemprop="name">最新消息</span>
+          </a>
+          <a class="header__link" href="{{ '/about' | relative_url }}" itemprop="url">
+            <span itemprop="name">关于我们</span>
+          </a>
+        </div>
+      </nav>
+      <div class="header__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
